@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="formulario" method="post" action="/enviar.php">
+        <!-- Entrada de Datos-->
+        Nombre de Usuario:
+        <input type="text" name="nombre" value="" />
+        <br>
+        Correo Electronico:
+        <input type="email" name="email" value="" placeholder="Ingrese su Correo Electronico">
+        <br>
+
+        <input type="submit" value="Enviar" id="Enviar">
+    </form>
+
+    <p>Genero
+        <input type="radio" name="genero" value="F" />Femenino
+        <input type="radio" name="genero" value="M" />Masculino
+    </p>
+
+    <p>Curso
+        <input type="checkbox" name="cursos">Diseño de Aplicaciones
+        <input type="checkbox" name="cursos" checked>Redes
+    </p>
+    <form action="">
+        <input type="text" name="Nombre" minlength="5" maxlength="40">
+        <input type="number" placeholder="edad" min="0" max="60">
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
